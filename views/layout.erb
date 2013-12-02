@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title><%= @title %></title>
+</head>
+<body>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/pokemons/new">New Pokemon</a></li>
+    <% if post_show_page?  %>
+      <li><a href="/pokemons/<%= @pokemon.id %>/edit">Edit Pokemon</a></li>
+      <li><%= delete_post_button(@pokemon.id) %></li>
+    <% end %>
+  </ul>
+  <%= yield %>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<h1>Edit Pokemon</h1>
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="put" />
+
+  <label for="post_title">Title:</label><br />
+  <input id="post_title" name="pokemon[name]" type="text" value="<%= @pokemon.name %>" />
+  <br />
+
+  <label for="post_body">Body:</label><br />
+  <textarea id="post_body" name="pokemon[element]" rows="5"><%= @pokemon.element %></textarea>
+  <br />
+
+  <input type="submit" value="Edit Pokemon" />
+</form>

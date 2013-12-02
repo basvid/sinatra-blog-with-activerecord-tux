@@ -1,0 +1,12 @@
+<h1>New Pokemon</h1>
+<form action="/pokemons" method="post">
+  <label for="post_nom">Nom:</label><br />
+  <input id="post_nom" name="pokemon[name]" type="text" value="<%= @pokemon.name %>" />
+  <br />
+
+  <label for="post_element">Element:</label><br />
+  <textarea id="post_element" name="pokemon[element]" rows="5"><%= @pokemon.element %></textarea>
+  <br />
+
+  <input type="submit" value="Create Pokemon" />
+</form>

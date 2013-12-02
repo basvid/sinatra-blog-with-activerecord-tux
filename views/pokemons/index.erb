@@ -1,0 +1,12 @@
+<h1>Welcome to my pokedex!</h1>
+<ul>
+  <% @pokemons.each do |pokemon| %>
+    <li>
+      <h2>
+        <a href="/pokemons/<%= pokemon.id %>"><%= pokemon.name %>
+        </a> 
+        <span><%= pokemon.created_at %></span>
+      </h2>
+    </li>
+  <% end %>
+</ul>
