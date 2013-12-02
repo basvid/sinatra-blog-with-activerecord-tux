@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started
 
 * Download and install Ruby: http://ruby-lang.org
@@ -9,7 +8,3 @@
 * Migrate the database: `rake db:create_migration NAME=create_pokemons`
 * Start the server: `ruby app.rb`
 * Browse the URL: http://localhost:4567
-=======
-sinatra-blog-with-activerecord-tux
-==================================
->>>>>>> 7af2a85c2709ce2ba5fc7870758cd4f33b63a5bf
